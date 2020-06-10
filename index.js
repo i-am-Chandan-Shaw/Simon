@@ -12,14 +12,6 @@ $(document).keypress(function() {
   }
 });
 
-$(document).click(function() {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    sequence();
-    started = true;
-  }
-});
-
 function sequence() {
   userpattern=[];
   level++;
